@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "djIIhFbMHycTta88Y5i4Gc5ORz5pjB0+RtVmTDKKpmYCWw5t16mxEKVN5fGJOwCnZmTS8EkiCXQqIkjXKane8Q==",
+  "dgSpecHash": "o8UwvAWXJk4Mb4cZSZJxSuSKoxsSInQLLjLCrIzlCTDfrGsUkZzV/uDnZizGao0HvDArK9xXI6xu7aNcP9yFTQ==",
   "success": true,
-  "projectFilePath": "D:\\Visual Studio Community 2019\\C#\\Learn Microsoft\\CsharpProjects\\TestProject\\TestProject.csproj",
+  "projectFilePath": "D:\\Visual Studio Community 2019\\C#\\Learn Microsoft\\CsharpProjects\\Microsoft-Learning-Modules\\TestProject\\TestProject.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
