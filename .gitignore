@@ -421,3 +421,5 @@ FodyWeavers.xsd
 bin/
 obj/
 TestProject/obj/
+TestProject/obj/Debug/net8.0/TestProject.AssemblyInfo.cs
+TestProject/obj/Debug/net8.0/TestProject.AssemblyInfoInputs.cache
