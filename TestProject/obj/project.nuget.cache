@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "o8UwvAWXJk4Mb4cZSZJxSuSKoxsSInQLLjLCrIzlCTDfrGsUkZzV/uDnZizGao0HvDArK9xXI6xu7aNcP9yFTQ==",
+  "dgSpecHash": "OZdQ3aKOkmE=",
   "success": true,
   "projectFilePath": "D:\\Visual Studio Community 2019\\C#\\Learn Microsoft\\CsharpProjects\\Microsoft-Learning-Modules\\TestProject\\TestProject.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.24\\microsoft.netcore.app.ref.8.0.24.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.24\\microsoft.windowsdesktop.app.ref.8.0.24.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.24\\microsoft.aspnetcore.app.ref.8.0.24.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\8.0.24\\microsoft.netcore.app.host.win-x64.8.0.24.nupkg.sha512"
+  ],
   "logs": []
 }
