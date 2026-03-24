@@ -7,10 +7,34 @@
 
 <p role="status">Current count: @currentCount</p>
 
+@if (currentCount > 5)
+{
+    <p>You win!</p>
+}
+
 <button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+@* <button class="btn btn-primary" @onclick="() => currentCount++">Click me</button> *@
+
+<ul>
+    @foreach (var item in list)
+    {
+        <li>@item</li>
+    }
+</ul>
+
+<input @onchange="InputChanged" />
+<p>@message</p>
+
+<input @bind="text" />
+<button @onclick="() => text = String.Empty">Clear</button>
+<p>@text</p>
+
 
 @code {
+    List<string> list = new List<string> { "C#", "Java", "Javascript" };
     private int currentCount = 0;
+    string message = "";
+    string text = "";
 
     [Parameter]
     public int IncrementAmount { get; set; } = 1;
@@ -19,4 +43,10 @@
     {
         currentCount += IncrementAmount;
     }
+
+    void InputChanged(ChangeEventArgs e)
+    {
+        message = (string)e.Value;
+    }
+
 }
