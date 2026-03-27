@@ -1,6 +1,8 @@
 @page "/"
 @inject HttpClient HttpClient
 @inject NavigationManager NavigationManager
+@using BlazingPizza.Services
+@inject OrderState OrderState
 
 <div class="main">
     <h1>Blazing Pizzas</h1>
@@ -8,18 +10,35 @@
         @if (specials != null)
         {
             @foreach (var pizza in specials)
-            {
-                <li style="background-image: url('@pizza.ImageUrl')">
+            {                
+                @* <li style="background-image: url('@pizza.ImageUrl')">
                     <div class="pizza-info">
                         <span class=title>@pizza.Name</span>
                             @pizza.Description
                         <span class="price">@pizza.GetFormattedBasePrice()</span>     
+                    </div>
+                </li> *@
+
+                <li @onclick="@(() => OrderState.ShowConfigurePizzaDialog(pizza))" style="background-image: url('@pizza.ImageUrl')">
+                    <div class="pizza-info">
+                    <span class="title">@pizza.Name</span>
+                    @pizza.Description
+                    <span class="price">@pizza.GetFormattedBasePrice()</span>
                     </div>
                 </li>
             }
         }
     </ul>
 </div>
+
+@if (OrderState.ShowingConfigureDialog)
+{
+    @* <ConfigurePizzaDialog Pizza="OrderState.ConfiguringPizza" /> *@
+    <ConfigurePizzaDialog
+    Pizza="OrderState.ConfiguringPizza"
+    OnCancel="OrderState.CancelConfigurePizzaDialog"
+    OnConfirm="OrderState.ConfirmConfigurePizzaDialog" />
+}
 
 @code
 {
